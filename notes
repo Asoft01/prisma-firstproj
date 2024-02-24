@@ -5,4 +5,6 @@ npm add prisma @prisma/client
 
 
 mongodb compass 
-npx 
+npx prisma generate
+npx prisma migrate dev --name init --create-only
+npx prisma migrate deploy
