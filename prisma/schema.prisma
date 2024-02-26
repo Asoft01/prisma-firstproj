@@ -15,3 +15,8 @@ model Users {
     createdAt DateTime @default(now())
     updateAt DateTime @updatedAt
 }
+
+model House {
+    id Int @id @default(autoincrement())
+    
+}
