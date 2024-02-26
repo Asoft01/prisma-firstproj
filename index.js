@@ -36,4 +36,9 @@ app.delete("/:id", async (req, res) => {
     res.json(deletedUser);
 });
 
+app.post("/house", async (req, res) =>  {
+    const newHouse = await prisma.house.create({ data : req.body }); 
+    res.json(newHouse);
+})
+
 app.listen(3001, () => console.log(`Server running on port ${3001}`)); 
